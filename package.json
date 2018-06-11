@@ -28,5 +28,8 @@
   "author": "Chris Laughlin <bluntm@gmail.com",
   "homepage": "https://github.com/chrislaughlin/safe-version",
   "license": "MIT",
-  "repository": "https://github.com/chrislaughlin/safe-version"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/chrislaughlin/safe-version"
+  }
 }
