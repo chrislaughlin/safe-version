@@ -1,8 +1,11 @@
 {
-  "name": "safe-release",
+  "name": "safe-version",
   "version": "1.0.0",
-  "description": "Describe safe-release here",
+  "description": "Safe release is a somple node script that will safely version your npm module.",
   "main": "lib/index.js",
+  "bin": {
+    "safe-release": "./lib/index.js"
+  },
   "files": [
     "es",
     "lib",
@@ -16,12 +19,14 @@
     "test:watch": "nwb test --server"
   },
   "dependencies": {
+    "execa": "^0.10.0",
+    "listr": "^0.14.1"
   },
   "devDependencies": {
     "nwb": "0.21.x"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Chris Laughlin <bluntm@gmail.com",
+  "homepage": "https://github.com/chrislaughlin/safe-version",
   "license": "MIT",
-  "repository": ""
+  "repository": "https://github.com/chrislaughlin/safe-version"
 }
