@@ -17,7 +17,7 @@
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
     "test:watch": "nwb test --server",
-    "dogFood": "npm run ./lib/index.js"
+    "dogFood": "npm run lib/index.js"
   },
   "dependencies": {
     "execa": "^0.10.0",
