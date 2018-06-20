@@ -16,7 +16,8 @@
     "clean": "nwb clean-module",
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "test:watch": "nwb test --server",
+    "dogFood": "./lib/index.js"
   },
   "dependencies": {
     "execa": "^0.10.0",
