@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const execa = require('execa');
 const Listr = require('listr');
 
@@ -15,7 +17,7 @@ const tasks = new Listr([
         }
     },
     {
-        title: 'Git',
+        title: 'Git checks',
         task: () => {
             return new Listr([
                 {
@@ -39,7 +41,7 @@ const tasks = new Listr([
         }
     },
     {
-        title: `Visioning Package; ${version}`,
+        title: `Visioning Package: ${version}`,
         task: () => execa('npm', ['version', version])
     }
 ]);
