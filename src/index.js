@@ -41,7 +41,7 @@ const tasks = new Listr([
         }
     },
     {
-        title: `Visioning Package: ${version}`,
+        title: `Versioning Package: ${version}`,
         task: () => execa('npm', ['version', version])
     }
 ]);
