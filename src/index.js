@@ -9,6 +9,13 @@ console.log(`VERSION: "${version}"`);
 
 const tasks = new Listr([
     {
+        title: `Current Version`,
+        task: () => {
+            const info = require('./package.json');
+            console.log(`${info.name}: ${info.version}`);
+        }
+    },
+    {
         title: `Bumping version`,
         task: () => {
             if (version === '' || version === undefined) {
@@ -43,7 +50,14 @@ const tasks = new Listr([
     {
         title: `Versioning Package: ${version}`,
         task: () => execa('npm', ['version', version])
-    }
+    },
+    {
+        title: `New Version`,
+        task: () => {
+            const info = require('./package.json');
+            console.log(`${info.name}: ${info.version}`);
+        }
+    },
 ]);
 
 tasks.run().catch(err => {
