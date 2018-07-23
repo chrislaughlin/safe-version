@@ -4,7 +4,7 @@
   "description": "Safe release is a somple node script that will safely version your npm module.",
   "main": "lib/index.js",
   "bin": {
-    "safe-release": "./lib/index.js"
+    "safe-version": "./lib/index.js"
   },
   "files": [
     "es",
